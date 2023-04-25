@@ -1,26 +1,34 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <TopBar></TopBar>
+  <body>
+    <div><TextComponent></TextComponent></div>
+    <div><Component1></Component1></div>
+    <div><Informes></Informes></div>
+  </body>
+  <Footer></Footer>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TopBar from './components/TopBar.vue'
+import Component1 from './components/Component1.vue'
+import TextComponent from './components/TextComponent.vue'
+import Informes from './components/Informes.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TopBar,
+    Component1,
+    TextComponent,
+    Informes,
+    Footer
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+  padding-top: 2.5rem; /* adjust this value to match the height of your navbar */
 }
 </style>
