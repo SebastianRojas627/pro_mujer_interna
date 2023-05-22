@@ -32,7 +32,7 @@
 
 <script>
 export default {
-    name: 'InformeS',
+  name: "InformeS",
   data() {
     return {
       title: "Avisos",

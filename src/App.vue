@@ -1,34 +1,40 @@
 <template>
-  <TopBar></TopBar>
+  <NavBar></NavBar>
   <body>
-    <div><TextComponent></TextComponent></div>
-    <div><Component1></Component1></div>
-    <div><Informes></Informes></div>
+    <CoverImage />
+    <PageDescription />
+    <WhatWeDo />
+    <WhoWeAre />
+    <Informes />
   </body>
   <Footer></Footer>
 </template>
 
 <script>
-import TopBar from './components/TopBar.vue'
-import Component1 from './components/Component1.vue'
-import TextComponent from './components/TextComponent.vue'
-import Informes from './components/Informes.vue'
-import Footer from './components/Footer.vue'
+import NavBar from "./components/NavBar.vue";
+import WhatWeDo from "./components/WhatWeDo.vue";
+import CoverImage from "./components/CoverImage.vue";
+import Informes from "./components/Informes.vue";
+import Footer from "./components/Footer.vue";
+import PageDescription from "./components/PageDescription.vue";
+import WhoWeAre from "./components/WhoWeAre.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    TopBar,
-    Component1,
-    TextComponent,
+    NavBar,
+    WhatWeDo,
+    CoverImage,
     Informes,
-    Footer
-  }
-}
+    Footer,
+    PageDescription,
+    WhoWeAre,
+  },
+};
 </script>
 
 <style>
 body {
-  padding-top: 2.5rem; /* adjust this value to match the height of your navbar */
+  padding-top: 2.3rem; /* adjust this value to match the height of your navbar */
 }
 </style>
