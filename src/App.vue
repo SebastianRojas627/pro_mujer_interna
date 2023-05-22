@@ -5,6 +5,7 @@
     <PageDescription />
     <WhatWeDo />
     <WhoWeAre />
+    <LocationMap />
     <Informes />
   </body>
   <Footer></Footer>
@@ -18,6 +19,7 @@ import Informes from "./components/Informes.vue";
 import Footer from "./components/Footer.vue";
 import PageDescription from "./components/PageDescription.vue";
 import WhoWeAre from "./components/WhoWeAre.vue";
+import LocationMap from "./components/LocationMap.vue";
 
 export default {
   name: "App",
@@ -29,6 +31,7 @@ export default {
     Footer,
     PageDescription,
     WhoWeAre,
+    LocationMap,
   },
 };
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="container pt-5 pb-5">
+  <div class="container pb-5">
     <div class="row">
       <div class="col-md-6">
         <h1 class="display-6">{{ title }}</h1>
