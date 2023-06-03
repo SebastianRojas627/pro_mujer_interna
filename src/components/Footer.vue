@@ -17,17 +17,49 @@
           <div class="footer-section">
             <h4 class="footer-section-title">Redes sociales</h4>
             <div class="social-icons">
-              <a href="https://www.facebook.com/" class="social-icon" target="_blank">
-                <img src="../assets/faceLogo.png" alt="Facebook" class="icon-img" />
+              <a
+                href="https://www.facebook.com/"
+                class="social-icon"
+                target="_blank"
+              >
+                <img
+                  src="../assets/faceLogo.png"
+                  alt="Facebook"
+                  class="icon-img"
+                />
               </a>
-              <a href="https://twitter.com/" class="social-icon" target="_blank">
-                <img src="../assets/twitterLogo.png" alt="Twitter" class="icon-img" />
+              <a
+                href="https://twitter.com/"
+                class="social-icon"
+                target="_blank"
+              >
+                <img
+                  src="../assets/twitterLogo.png"
+                  alt="Twitter"
+                  class="icon-img"
+                />
               </a>
-              <a href="https://www.instagram.com/" class="social-icon" target="_blank">
-                <img src="../assets/insta.png" alt="Instagram" class="icon-img" />
+              <a
+                href="https://www.instagram.com/"
+                class="social-icon"
+                target="_blank"
+              >
+                <img
+                  src="../assets/insta.png"
+                  alt="Instagram"
+                  class="icon-img"
+                />
               </a>
-              <a href="https://www.tiktok.com/" class="social-icon" target="_blank">
-                <img src="../assets/tiktokFondo.png" alt="TikTok" class="icon-img" />
+              <a
+                href="https://www.tiktok.com/"
+                class="social-icon"
+                target="_blank"
+              >
+                <img
+                  src="../assets/tiktokFondo.png"
+                  alt="TikTok"
+                  class="icon-img"
+                />
               </a>
             </div>
           </div>
@@ -47,10 +79,9 @@
   </footer>
 </template>
 
-
 <script>
 export default {
-  name: 'FooteR',
+  name: "FooteR",
 };
 </script>
 

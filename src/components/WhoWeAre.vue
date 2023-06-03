@@ -85,7 +85,6 @@ export default {
 
 <style scoped>
 .custom-img {
-  /* Set the desired maximum height */ /* Adjust how the image fits within the container */
   height: 10%;
   width: auto;
 }

@@ -1,5 +1,5 @@
 <template>
-  <h1 class="mb-3">UBICACIONES</h1>
+  <h1 class="mb-3 text-center">UBICACIONES</h1>
   <div class="mb-5"><div id="map"></div></div>
 </template>
 
@@ -14,7 +14,7 @@ export default {
   methods: {
     initMap() {
       const map = L.map("map", {
-        center: [-16.5, -68.15], // Set the initial center to La Paz, Bolivia
+        center: [-16.5, -68.15],
         zoom: 13,
       });
 
@@ -24,7 +24,7 @@ export default {
         maxZoom: 18,
       }).addTo(map);
 
-      map.invalidateSize(); // Refresh the map size to ensure it takes 80% of the screen width
+      map.invalidateSize();
     },
   },
 };

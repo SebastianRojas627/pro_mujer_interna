@@ -89,12 +89,11 @@ export default {
 
 <style scoped>
 .custom-img {
-  /* Set the desired maximum height */ /* Adjust how the image fits within the container */
   height: 10%;
   width: auto;
 }
 
 .custom-background {
-  background-color: rgb(221, 221, 221);
+  background-color: rgb(242, 240, 240);
 }
 </style>
