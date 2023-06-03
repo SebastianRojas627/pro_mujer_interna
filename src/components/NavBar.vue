@@ -24,13 +24,14 @@
         </li>
       </ul>
     </div>
-    <a href="https://wa.me/59165165908" target="_blank" class="navbar-text">
+    <a href="https://wa.me/59165165908" target="_blank" class="navbar-text m-3">
       <img
         src="../assets/WhatsApp-Logo.wine.png"
         alt="WhatsApp"
         width="auto"
         height="55"
       />
+      <p class="nav-item">¿Necesitas Ayuda?</p>
     </a>
   </nav>
 </template>

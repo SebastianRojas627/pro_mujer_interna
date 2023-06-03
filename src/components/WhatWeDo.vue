@@ -1,5 +1,5 @@
 <template>
-  <div class="custom-background pt-5 pb-5">
+  <div class="pt-5 pb-5">
     <div class="container">
       <h1 class="text-center">¿QUÉ HACEMOS?</h1>
       <div class="row justify-content-center mt-5">
@@ -91,9 +91,5 @@ export default {
 .custom-img {
   height: 10%;
   width: auto;
-}
-
-.custom-background {
-  background-color: rgb(242, 240, 240);
 }
 </style>

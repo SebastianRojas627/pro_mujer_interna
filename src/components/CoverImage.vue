@@ -2,8 +2,8 @@
   <div class="position-relative mb-5">
     <img class="img-fluid" src="../assets/background1.jpg" alt="Image Cover" />
     <div class="position-absolute bottom-0 start-0 p-3 text-white text-center">
-      <h2>{{ imageText }}</h2>
-      <p>{{ imageSubtext }}</p>
+      <h2 class="display-2">{{ imageText }}</h2>
+      <p class="display-5">{{ imageSubtext }}</p>
     </div>
   </div>
 </template>
@@ -20,14 +20,6 @@ export default {
 </script>
 
 <style scoped>
-.container-fluid {
-  padding: 0;
-  margin: 0;
-}
-.col {
-  padding: 0;
-  margin: 0;
-}
 .img-fluid {
   width: 100%;
 }
