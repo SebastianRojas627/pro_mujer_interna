@@ -9,11 +9,13 @@
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.5",
     "core-js": "^3.8.3",
     "jquery": "^3.6.4",
     "leaflet": "^1.9.4",
     "popper.js": "^1.16.1",
-    "vue": "^3.2.13"
+    "vue": "^3.2.13",
+    "vue-material-design-icons": "^5.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
