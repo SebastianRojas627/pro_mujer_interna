@@ -3,7 +3,7 @@
     <div class="container">
       <h1 class="text-center">¿QUÉ HACEMOS?</h1>
       <div class="row justify-content-center mt-5">
-        <div class="col-md-3">
+        <div class="col-md-4">
           <div class="card-wrapper">
             <div class="card mb-4">
               <div class="img-wrapper">
@@ -23,7 +23,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
           <div class="card-wrapper">
             <div class="card mb-4">
               <div class="img-wrapper">
@@ -45,7 +45,7 @@
         </div>
       </div>
       <div class="row justify-content-center mt-4">
-        <div class="col-md-3">
+        <div class="col-md-4">
           <div class="card-wrapper">
             <div class="card mb-4">
               <div class="img-wrapper">
@@ -65,7 +65,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
           <div class="card-wrapper">
             <div class="card mb-4">
               <div class="img-wrapper">
@@ -98,25 +98,29 @@ export default {
         imageSrc: require("../assets/card1.png"),
         imageAlt: "Image 1",
         description: "Salud y Bienestar",
-        hoverText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur nisi non lectus semper feugiat.",
+        hoverText:
+          "Ofrecemos servicios de salud a bajo costo, entre ellos: mamografías, tamizajes, consultas médicas y telemedicina.",
       },
       card2: {
         imageSrc: require("../assets/card2.png"),
         imageAlt: "Image 2",
         description: "Apoyo Financiero",
-        hoverText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur nisi non lectus semper feugiat.",
+        hoverText:
+          "Brindamos apoyo financiero para tu autonomía económica a través de distintas modalidades que se adaptan a sus necesidades: créditos individuales y grupales.",
       },
       card3: {
         imageSrc: require("../assets/card3.png"),
         imageAlt: "Image 3",
         description: "Capacitacion",
-        hoverText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur nisi non lectus semper feugiat.",
+        hoverText:
+          "Impartimos cursos, talleres y capacitaciones para que puedas desarrollar habilidades y destrezas que te aporten independencia.",
       },
       card4: {
         imageSrc: require("../assets/card4.png"),
         imageAlt: "Image 4",
         description: "Emprendimiento",
-        hoverText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur nisi non lectus semper feugiat.",
+        hoverText:
+          "A través de Pro Mujer puedes aprender a impulsar tu negocio o a generarlo desde cero. Con herramientas como Emprende promujer. ",
       },
     };
   },
@@ -128,6 +132,7 @@ export default {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  border-radius: 10px; /* Añadido el borde curvo */
 }
 
 .img-wrapper {
