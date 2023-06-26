@@ -1,8 +1,8 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark m-auto fixed-top m-3">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark m-auto fixed-top m-3" style="height: 85px;" :class="{'transparent': isTransparent}">
     <a class="navbar-brand" href="#">
       <img
-        src="../assets/bank-logo-example.png"
+        src="('bank-logo-example.png')"
         alt="Logo"
         width="auto"
         height="40"
@@ -11,16 +11,16 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
+          <a :class="{'text-white': isTransparent, 'text-black': !isTransparent}" class="nav-link" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a :class="{'text-white': isTransparent, 'text-black': !isTransparent}" class="nav-link" href="#">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
+          <a :class="{'text-white': isTransparent, 'text-black': !isTransparent}" class="nav-link" href="#">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a :class="{'text-white': isTransparent, 'text-black': !isTransparent}" class="nav-link" href="#">Contact</a>
         </li>
       </ul>
     </div>
@@ -31,14 +31,47 @@
         width="auto"
         height="55"
       />
-      <p class="nav-item">¿Necesitas Ayuda?</p>
+      <p :class="{'text-white': isTransparent, 'text-black': !isTransparent}" class="nav-item">¿Necesitas Ayuda?</p>
     </a>
   </nav>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      isTransparent: true,
+    };
+  },
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  beforeUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      this.isTransparent = window.pageYOffset === 0;
+    },
+  },
+};
+</script>
+
 <style scoped>
-.navbar-text {
-  display: flex;
-  align-items: center;
+.navbar {
+  background-color: rgba(169, 169, 169, 0.5) !important;
+  transition: background-color 0.3s ease;
+}
+
+.transparent {
+  background-color: transparent !important;
+}
+
+.text-white {
+  color: white !important;
+}
+
+.text-black {
+  color: black !important;
 }
 </style>

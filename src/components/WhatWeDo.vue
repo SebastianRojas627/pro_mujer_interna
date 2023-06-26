@@ -182,7 +182,7 @@ export default {
   padding: 10px;
 }
 
-.card-text {
+.card-text { 
   color: #0099ff;
   text-align: center;
   font-weight: bold;
