@@ -1,6 +1,6 @@
 <template>
   <div class="container my-4">
-    <h2 class="text-center mb-4">{{ title }}</h2>
+    <TitleComponent :title="this.title" />
     <div class="row justify-content-center align-items-center">
       <div class="col-md-5">
         <div class="embed-responsive embed-responsive-16by9 rounded">
@@ -21,7 +21,11 @@
 </template>
 
 <script>
+import TitleComponent from "./TitleComponent.vue";
 export default {
+  components: {
+    TitleComponent,
+  },
   data() {
     return {
       title: "Historias",

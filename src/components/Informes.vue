@@ -1,7 +1,7 @@
 <template>
   <section id="avisos">
-    <div>
-      <h1 class="informes-title">{{ title }}</h1>
+    <div class="bg-light pt-3">
+      <TitleComponent :title="this.title" />
       <div class="informes-section">
         <h2 class="informes-subtitle informes-left">{{ subtitle1 }}</h2>
         <ul class="informes-list">
@@ -72,14 +72,14 @@
 <style>
 .informes-title {
   text-align: center;
-  color: red;
+  color: green;
   font-size: 42px;
   margin-bottom: 20px;
 }
 
 .informes-subtitle {
   text-align: left;
-  color: red;
+  color: rgb(22, 132, 0);
   font-size: 24px;
   margin-top: 30px;
   margin-left: 30px;
@@ -111,7 +111,12 @@
 </style>
 
 <script>
+import TitleComponent from "./TitleComponent.vue";
 export default {
+  components: {
+    TitleComponent,
+  },
+
   name: "InformeS",
   data() {
     return {

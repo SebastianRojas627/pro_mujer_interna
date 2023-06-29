@@ -1,7 +1,7 @@
 <template>
   <section id="ubicaciones">
     <div class="mb-5 pt-5">
-      <h1 class="mb-3 text-center">UBICACIONES</h1>
+      <TitleComponent title="UBICACIONES" />
       <div id="map"></div>
     </div>
   </section>
@@ -10,8 +10,11 @@
 <script>
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
-
+import TitleComponent from "./TitleComponent.vue";
 export default {
+  components: {
+    TitleComponent,
+  },
   mounted() {
     this.initMap();
   },

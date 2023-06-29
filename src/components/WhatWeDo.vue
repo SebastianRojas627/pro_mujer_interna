@@ -2,7 +2,7 @@
   <section id="quehacemos">
     <div class="pt-5 pb-5">
       <div class="container">
-        <h1 class="text-center">¿QUÉ HACEMOS?</h1>
+        <TitleComponent title="¿QUÉ HACEMOS?" />
         <div class="row justify-content-center mt-5">
           <div class="col-md-4">
             <div class="card-wrapper">
@@ -93,7 +93,11 @@
 </template>
 
 <script>
+import TitleComponent from "./TitleComponent.vue";
 export default {
+  components: {
+    TitleComponent,
+  },
   data() {
     return {
       card1: {

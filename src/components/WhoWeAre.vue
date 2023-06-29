@@ -2,7 +2,7 @@
   <secition id="quienesssomos">
     <div class="bg-light py-5">
       <div class="container">
-        <h1 class="text-center">¿QUIENES SOMOS?</h1>
+        <TitleComponent title="¿QUIENES SOMOS?" />
         <div class="row justify-content-center mt-5">
           <div class="col-md-3">
             <div class="card mb-4">
@@ -59,7 +59,11 @@
 </template>
 
 <script>
+import TitleComponent from "./TitleComponent.vue";
 export default {
+  components: {
+    TitleComponent,
+  },
   data() {
     return {
       card1: {
