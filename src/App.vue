@@ -46,4 +46,17 @@ export default {
 body {
   padding-top: 0rem;
 }
+body::-webkit-scrollbar {
+  width: 8px; /* Ancho del scroll */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color del scroll */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color del scroll al pasar el cursor sobre él */
+}
+
 </style>
+

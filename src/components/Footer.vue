@@ -21,7 +21,7 @@
               <h4 class="footer-section-title">Redes sociales</h4>
               <div class="social-icons">
                 <a
-                  href="https://www.facebook.com/"
+                  href="https://www.facebook.com/promujerintl"
                   class="social-icon"
                   target="_blank"
                 >
@@ -32,7 +32,7 @@
                   />
                 </a>
                 <a
-                  href="https://twitter.com/"
+                  href="https://twitter.com/ProMujer"
                   class="social-icon"
                   target="_blank"
                 >
@@ -43,7 +43,7 @@
                   />
                 </a>
                 <a
-                  href="https://www.instagram.com/"
+                  href="https://www.instagram.com/promujer/"
                   class="social-icon"
                   target="_blank"
                 >
@@ -54,7 +54,7 @@
                   />
                 </a>
                 <a
-                  href="https://www.tiktok.com/"
+                  href="https://www.tiktok.com/@emprendepromujer"
                   class="social-icon"
                   target="_blank"
                 >
@@ -71,9 +71,9 @@
             <div class="footer-section">
               <h4 class="footer-section-title">Información de contacto</h4>
               <ul class="footer-links">
-                <li>Dirección: Wall Street</li>
-                <li>Teléfono: 123456789</li>
-                <li>Email: locangas@gmail.com</li>
+                <li>Dirección: Av. Hernando Siles N°5411, Edif. Loyola II, Calle 8, Zona Obrajes. La Paz - Bolivia</li>
+                <li>Teléfono: +1 (646) 626-7000</li>
+                <li>Email: donorservices@promujer.org</li>
               </ul>
             </div>
           </div>
