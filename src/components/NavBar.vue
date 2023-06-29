@@ -1,37 +1,52 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark m-auto fixed-top m-3" style="height: 85px;" :class="{'transparent': isTransparent}">
-    <a class="navbar-brand" href="#">
+  <nav
+    class="navbar navbar-expand-md navbar-dark bg-dark fixed-top"
+    style="height: 85px"
+    :class="{ transparent: isTransparent }"
+  >
+    <a class="navbar-brand" href="#inicio">
       <img
-        src="('bank-logo-example.png')"
+        src="../assets/bank-logo-example.png"
         alt="Logo"
         width="auto"
         height="40"
+        class="m-3"
       />
     </a>
+
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a :class="{'text-white': isTransparent, 'text-black': !isTransparent}" class="nav-link" href="#">Home</a>
+          <a class="nav-link text-white" href="#inicio">Inicio</a>
         </li>
         <li class="nav-item">
-          <a :class="{'text-white': isTransparent, 'text-black': !isTransparent}" class="nav-link" href="#">About</a>
+          <a class="nav-link text-white" href="#quehacemos">Que Hacemos</a>
         </li>
         <li class="nav-item">
-          <a :class="{'text-white': isTransparent, 'text-black': !isTransparent}" class="nav-link" href="#">Services</a>
+          <a class="nav-link text-white" href="#quienessomos">Quienes Somos</a>
         </li>
         <li class="nav-item">
-          <a :class="{'text-white': isTransparent, 'text-black': !isTransparent}" class="nav-link" href="#">Contact</a>
+          <a class="nav-link text-white" href="#ubicaciones">Ubicaciones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#avisos">Avisos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#informacion">Informacion</a>
         </li>
       </ul>
     </div>
-    <a href="https://wa.me/59165165908" target="_blank" class="navbar-text m-3">
+    <a
+      href="https://wa.me/59165165908"
+      target="_blank"
+      class="navbar-text m-3 d-flex justify-content-end text-white"
+    >
       <img
         src="../assets/WhatsApp-Logo.wine.png"
         alt="WhatsApp"
         width="auto"
         height="55"
       />
-      <p :class="{'text-white': isTransparent, 'text-black': !isTransparent}" class="nav-item">¿Necesitas Ayuda?</p>
     </a>
   </nav>
 </template>
@@ -44,10 +59,10 @@ export default {
     };
   },
   mounted() {
-    window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener("scroll", this.handleScroll);
   },
   beforeUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener("scroll", this.handleScroll);
   },
   methods: {
     handleScroll() {
@@ -59,7 +74,7 @@ export default {
 
 <style scoped>
 .navbar {
-  background-color: rgba(169, 169, 169, 0.5) !important;
+  background-color: rgba(0, 0, 0, 0.85) !important;
   transition: background-color 0.3s ease;
 }
 

@@ -1,93 +1,95 @@
 <template>
-  <div class="pt-5 pb-5">
-    <div class="container">
-      <h1 class="text-center">¿QUÉ HACEMOS?</h1>
-      <div class="row justify-content-center mt-5">
-        <div class="col-md-4">
-          <div class="card-wrapper">
-            <div class="card mb-4">
-              <div class="img-wrapper">
-                <img
-                  :src="card1.imageSrc"
-                  :alt="card1.imageAlt"
-                  class="card-img-top custom-img"
-                />
-                <div class="img-overlay"></div>
-                <div class="card-hover-text">
-                  <p>{{ card1.hoverText }}</p>
+  <section id="quehacemos">
+    <div class="pt-5 pb-5">
+      <div class="container">
+        <h1 class="text-center">¿QUÉ HACEMOS?</h1>
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-4">
+            <div class="card-wrapper">
+              <div class="card mb-4">
+                <div class="img-wrapper">
+                  <img
+                    :src="card1.imageSrc"
+                    :alt="card1.imageAlt"
+                    class="card-img-top custom-img"
+                  />
+                  <div class="img-overlay"></div>
+                  <div class="card-hover-text">
+                    <p>{{ card1.hoverText }}</p>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="card-text bigger-text">{{ card1.description }}</p>
                 </div>
               </div>
-              <div class="card-body">
-                <p class="card-text bigger-text">{{ card1.description }}</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-wrapper">
+              <div class="card mb-4">
+                <div class="img-wrapper">
+                  <img
+                    :src="card2.imageSrc"
+                    :alt="card2.imageAlt"
+                    class="card-img-top custom-img"
+                  />
+                  <div class="img-overlay"></div>
+                  <div class="card-hover-text">
+                    <p>{{ card2.hoverText }}</p>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="card-text bigger-text">{{ card2.description }}</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card-wrapper">
-            <div class="card mb-4">
-              <div class="img-wrapper">
-                <img
-                  :src="card2.imageSrc"
-                  :alt="card2.imageAlt"
-                  class="card-img-top custom-img"
-                />
-                <div class="img-overlay"></div>
-                <div class="card-hover-text">
-                  <p>{{ card2.hoverText }}</p>
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-4">
+            <div class="card-wrapper">
+              <div class="card mb-4">
+                <div class="img-wrapper">
+                  <img
+                    :src="card3.imageSrc"
+                    :alt="card3.imageAlt"
+                    class="card-img-top custom-img"
+                  />
+                  <div class="img-overlay"></div>
+                  <div class="card-hover-text">
+                    <p>{{ card3.hoverText }}</p>
+                  </div>
                 </div>
-              </div>
-              <div class="card-body">
-                <p class="card-text bigger-text">{{ card2.description }}</p>
+                <div class="card-body">
+                  <p class="card-text bigger-text">{{ card3.description }}</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="row justify-content-center mt-4">
-        <div class="col-md-4">
-          <div class="card-wrapper">
-            <div class="card mb-4">
-              <div class="img-wrapper">
-                <img
-                  :src="card3.imageSrc"
-                  :alt="card3.imageAlt"
-                  class="card-img-top custom-img"
-                />
-                <div class="img-overlay"></div>
-                <div class="card-hover-text">
-                  <p>{{ card3.hoverText }}</p>
+          <div class="col-md-4">
+            <div class="card-wrapper">
+              <div class="card mb-4">
+                <div class="img-wrapper">
+                  <img
+                    :src="card4.imageSrc"
+                    :alt="card4.imageAlt"
+                    class="card-img-top custom-img"
+                  />
+                  <div class="img-overlay"></div>
+                  <div class="card-hover-text">
+                    <p>{{ card4.hoverText }}</p>
+                  </div>
                 </div>
-              </div>
-              <div class="card-body">
-                <p class="card-text bigger-text">{{ card3.description }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card-wrapper">
-            <div class="card mb-4">
-              <div class="img-wrapper">
-                <img
-                  :src="card4.imageSrc"
-                  :alt="card4.imageAlt"
-                  class="card-img-top custom-img"
-                />
-                <div class="img-overlay"></div>
-                <div class="card-hover-text">
-                  <p>{{ card4.hoverText }}</p>
+                <div class="card-body">
+                  <p class="card-text bigger-text">{{ card4.description }}</p>
                 </div>
-              </div>
-              <div class="card-body">
-                <p class="card-text bigger-text">{{ card4.description }}</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -148,7 +150,7 @@ export default {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   opacity: 0;
-  border-radius: 10px;
+  border-radius: 40px;
   transition: opacity 0.3s ease;
 }
 
@@ -182,7 +184,7 @@ export default {
   padding: 10px;
 }
 
-.card-text { 
+.card-text {
   color: #0099ff;
   text-align: center;
   font-weight: bold;

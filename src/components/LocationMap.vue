@@ -1,8 +1,10 @@
 <template>
-  <div class="mb-5 pt-5">
-    <h1 class="mb-3 text-center">UBICACIONES</h1>
-    <div id="map"></div>
-  </div>
+  <section id="ubicaciones">
+    <div class="mb-5 pt-5">
+      <h1 class="mb-3 text-center">UBICACIONES</h1>
+      <div id="map"></div>
+    </div>
+  </section>
 </template>
 
 <script>
